@@ -1,4 +1,4 @@
-#line 1 "C:/Users/saqrH/Desktop/Project - Copy/Software/MyProject.c"
+#line 1 "C:/Users/saqrH/Desktop/TrafficLightProject/Software/MyProject.c"
 
 char arr[] = {0xbf, 0x86, 0xdb, 0xcf, 0xe6, 0xed, 0xfd, 0x87, 0xff, 0xef};
 
@@ -126,7 +126,7 @@ void initPorts(){
  TRISC = 0x0;
  TRISD = 0x0;
  PORTC = 0x0;
- PORTD = 0x0;
+ PORTD = 0xff;
  TRISB = 0x0;
  PORTB = 0x0;
  TRISE = 0x0;

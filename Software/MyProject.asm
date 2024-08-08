@@ -541,8 +541,9 @@ _initPorts:
 	CLRF       TRISD+0
 ;MyProject.c,127 :: 		PORTC = 0x0;
 	CLRF       PORTC+0
-;MyProject.c,128 :: 		PORTD = 0x0;
-	CLRF       PORTD+0
+;MyProject.c,128 :: 		PORTD = 0xff;
+	MOVLW      255
+	MOVWF      PORTD+0
 ;MyProject.c,129 :: 		TRISB = 0x0;
 	CLRF       TRISB+0
 ;MyProject.c,130 :: 		PORTB = 0x0;

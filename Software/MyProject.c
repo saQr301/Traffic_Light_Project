@@ -125,7 +125,7 @@ void initPorts(){
         TRISC = 0x0;
         TRISD = 0x0;
         PORTC = 0x0;
-        PORTD = 0x0;
+        PORTD = 0xff;
         TRISB = 0x0;
         PORTB = 0x0;
         TRISE = 0x0;
