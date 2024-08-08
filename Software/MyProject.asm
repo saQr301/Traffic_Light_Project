@@ -602,7 +602,7 @@ L__loopOneSec57:
 	MOVWF      FSR
 	MOVF       INDF+0, 0
 	MOVWF      PORTC+0
-;MyProject.c,152 :: 		delay_ms(10);
+;MyProject.c,151 :: 		delay_ms(10);
 	MOVLW      26
 	MOVWF      R12+0
 	MOVLW      248
@@ -613,17 +613,17 @@ L_loopOneSec38:
 	DECFSZ     R12+0, 1
 	GOTO       L_loopOneSec38
 	NOP
-;MyProject.c,153 :: 		PORTD.B0 = 0xff;
+;MyProject.c,152 :: 		PORTD.B0 = 0xff;
 	BSF        PORTD+0, 0
-;MyProject.c,155 :: 		PORTD.B1 = 0x0;
+;MyProject.c,154 :: 		PORTD.B1 = 0x0;
 	BCF        PORTD+0, 1
-;MyProject.c,156 :: 		PORTC = arr[u1];
+;MyProject.c,155 :: 		PORTC = arr[u1];
 	MOVF       FARG_loopOneSec_u1+0, 0
 	ADDLW      _arr+0
 	MOVWF      FSR
 	MOVF       INDF+0, 0
 	MOVWF      PORTC+0
-;MyProject.c,158 :: 		delay_ms(10);
+;MyProject.c,156 :: 		delay_ms(10);
 	MOVLW      26
 	MOVWF      R12+0
 	MOVLW      248
@@ -634,17 +634,17 @@ L_loopOneSec39:
 	DECFSZ     R12+0, 1
 	GOTO       L_loopOneSec39
 	NOP
-;MyProject.c,159 :: 		PORTD.B1 = 0xff;
+;MyProject.c,157 :: 		PORTD.B1 = 0xff;
 	BSF        PORTD+0, 1
-;MyProject.c,162 :: 		PORTD.B2 = 0;
+;MyProject.c,160 :: 		PORTD.B2 = 0;
 	BCF        PORTD+0, 2
-;MyProject.c,163 :: 		PORTC = arr[t2];
+;MyProject.c,161 :: 		PORTC = arr[t2];
 	MOVF       FARG_loopOneSec_t2+0, 0
 	ADDLW      _arr+0
 	MOVWF      FSR
 	MOVF       INDF+0, 0
 	MOVWF      PORTC+0
-;MyProject.c,165 :: 		delay_ms(10);
+;MyProject.c,162 :: 		delay_ms(10);
 	MOVLW      26
 	MOVWF      R12+0
 	MOVLW      248
@@ -655,17 +655,17 @@ L_loopOneSec40:
 	DECFSZ     R12+0, 1
 	GOTO       L_loopOneSec40
 	NOP
-;MyProject.c,166 :: 		PORTD.B2 = 0xff;
+;MyProject.c,163 :: 		PORTD.B2 = 0xff;
 	BSF        PORTD+0, 2
-;MyProject.c,169 :: 		PORTD.B3 = 0;
+;MyProject.c,166 :: 		PORTD.B3 = 0;
 	BCF        PORTD+0, 3
-;MyProject.c,170 :: 		PORTC = arr[u2];
+;MyProject.c,167 :: 		PORTC = arr[u2];
 	MOVF       FARG_loopOneSec_u2+0, 0
 	ADDLW      _arr+0
 	MOVWF      FSR
 	MOVF       INDF+0, 0
 	MOVWF      PORTC+0
-;MyProject.c,172 :: 		delay_ms(10);
+;MyProject.c,168 :: 		delay_ms(10);
 	MOVLW      26
 	MOVWF      R12+0
 	MOVLW      248
@@ -676,16 +676,16 @@ L_loopOneSec41:
 	DECFSZ     R12+0, 1
 	GOTO       L_loopOneSec41
 	NOP
-;MyProject.c,173 :: 		PORTD.B3 = 0xff;
+;MyProject.c,169 :: 		PORTD.B3 = 0xff;
 	BSF        PORTD+0, 3
 ;MyProject.c,146 :: 		for(k=0;k<25;k++)
 	INCF       R1+0, 1
 	BTFSC      STATUS+0, 2
 	INCF       R1+1, 1
-;MyProject.c,176 :: 		}
+;MyProject.c,172 :: 		}
 	GOTO       L_loopOneSec35
 L_loopOneSec36:
-;MyProject.c,177 :: 		}
+;MyProject.c,173 :: 		}
 L_end_loopOneSec:
 	RETURN
 ; end of _loopOneSec

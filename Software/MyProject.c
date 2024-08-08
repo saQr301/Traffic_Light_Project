@@ -148,27 +148,23 @@ void loopOneSec(int t1, int u1, int t2, int u2){
            // tens in S1
                 PORTD.B0 = 0x0;
               PORTC = arr[t1];
-//                PORTC = tens1;
                 delay_ms(10);
                 PORTD.B0 = 0xff;
            // units in S1
               PORTD.B1 = 0x0;
               PORTC = arr[u1];
-//                PORTC = units1;
               delay_ms(10);
               PORTD.B1 = 0xff;
 
               //tens in S2
               PORTD.B2 = 0;
               PORTC = arr[t2];
-//              PORTB = tens2;
               delay_ms(10);
               PORTD.B2 = 0xff;
 
               //units in S2
               PORTD.B3 = 0;
               PORTC = arr[u2];
-//              PORTB = units2;
               delay_ms(10);
               PORTD.B3 = 0xff;
 

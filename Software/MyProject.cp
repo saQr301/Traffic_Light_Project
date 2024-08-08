@@ -149,27 +149,23 @@ void loopOneSec(int t1, int u1, int t2, int u2){
 
  PORTD.B0 = 0x0;
  PORTC = arr[t1];
-
  delay_ms(10);
  PORTD.B0 = 0xff;
 
  PORTD.B1 = 0x0;
  PORTC = arr[u1];
-
  delay_ms(10);
  PORTD.B1 = 0xff;
 
 
  PORTD.B2 = 0;
  PORTC = arr[t2];
-
  delay_ms(10);
  PORTD.B2 = 0xff;
 
 
  PORTD.B3 = 0;
  PORTC = arr[u2];
-
  delay_ms(10);
  PORTD.B3 = 0xff;
 
