@@ -1,8 +1,0 @@
-main
-	__CC2DW
-		____DoICP
-	initPorts
-	Div_16x16_S
-		Div_16x16_S_L
-	loopOneSec
-interrupt
